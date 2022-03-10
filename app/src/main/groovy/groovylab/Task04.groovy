@@ -8,6 +8,6 @@ package groovylab
 
 class Task04 {
     public static int fib(int n) {
-        throw UnsupportedOperationException('Not Implemented!')
+        return (n<=2 ? 1 : fib(n-1) + fib(n-2))
     }
 }

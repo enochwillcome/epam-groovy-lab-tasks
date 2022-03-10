@@ -7,6 +7,6 @@ package groovylab
 
 class Task03 {
     public static boolean isSublist(List a, List b) {
-        throw UnsupportedOperationException('Not Implemented!')
+        return a.containsAll(b)
     }
 }

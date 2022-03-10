@@ -5,9 +5,9 @@ version: "3.9"
 services:
   gradle:
     image: "gradle:7.2.0-jdk17"
-    working_dir: "${PWD}"
+    working_dir: "/home/sofiya/ansible/groovy/epam-groovy-lab-tasks"
     stdin_open: true
     tty: true
     entrypoint: "/bin/bash"
     volumes:
-      - "${PWD}:${PWD}"
+      - "/home/sofiya/ansible/groovy/epam-groovy-lab-tasks:/home/sofiya/ansible/groovy/epam-groovy-lab-tasks"

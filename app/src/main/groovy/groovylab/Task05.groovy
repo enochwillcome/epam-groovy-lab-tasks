@@ -7,6 +7,6 @@ package groovylab
 
 class Task05 {
     public static boolean isIp(String ip) {
-        throw UnsupportedOperationException('Not Implemented!')
+        return ip ==~ /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$/ ? true : false
     }
 }
